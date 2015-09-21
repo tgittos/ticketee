@@ -60,3 +60,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-rails', '~> 4.3'
 gem 'simple_form', '~> 3.1.0'
+
+# devise for auth
+# if devise installs its own bcrypt and it doesn't work on Windows
+# uninstall it, and manually install the ruby bcrypt
+# gem install bcrypt --platform=ruby
+# You need to have Devkit installed though
+gem 'bcrypt', '3.1.10', platforms: [:ruby]
+gem 'devise', '~> 3.4.1'
