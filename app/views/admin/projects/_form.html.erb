@@ -1,0 +1,6 @@
+<%= simple_form_for([:admin, project]) do |f| %>
+  <%= f.input :name %><br />
+  <%= f.input :description %><br />
+
+  <%= f.submit "#{project.new_record? ? "Create" : "Update"} Project", class: "btn-primary" %>
+<% end %>
