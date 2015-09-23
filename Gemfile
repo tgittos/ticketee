@@ -66,5 +66,10 @@ gem 'simple_form', '~> 3.1.0'
 # uninstall it, and manually install the ruby bcrypt
 # gem install bcrypt --platform=ruby
 # You need to have Devkit installed though
+# If something installs bcrypt x86-mingw32, uninstall it
+# cause it won't work under Windows
 gem 'bcrypt', '3.1.10', platforms: [:ruby]
 gem 'devise', '~> 3.4.1'
+
+# access control
+gem 'pundit', '~> 0.3.0'
